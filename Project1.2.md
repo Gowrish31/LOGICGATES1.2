@@ -8,8 +8,7 @@ CHIP And {
     Nand(a=a,b=b,out=nandout);
     Not(in=nandout,out=out);
 }
-
-
+![image](https://github.com/user-attachments/assets/94a9b955-e7ad-4ed0-8454-41dabb3a90ac)
 
 Xor.hdl
 CHIP Xor {
@@ -23,3 +22,5 @@ CHIP Xor {
     And(a=a,b=notb,out=t2);
     Or(a=t1,b=t2,out=out);
 }
+![image](https://github.com/user-attachments/assets/47ba4a3f-5c8a-4c6e-98d5-6a7265614fb8)
+
