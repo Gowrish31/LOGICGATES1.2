@@ -1,4 +1,5 @@
 And.hdl 
+
 CHIP And {
     IN a, b;
     OUT out;
@@ -11,6 +12,7 @@ CHIP And {
 ![image](https://github.com/user-attachments/assets/94a9b955-e7ad-4ed0-8454-41dabb3a90ac)
 
 Xor.hdl
+
 CHIP Xor {
     IN a, b;
     OUT out;
