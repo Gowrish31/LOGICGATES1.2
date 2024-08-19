@@ -1,0 +1,25 @@
+And.hdl 
+CHIP And {
+    IN a, b;
+    OUT out;
+
+
+    PARTS:
+    Nand(a=a,b=b,out=nandout);
+    Not(in=nandout,out=out);
+}
+
+
+
+Xor.hdl
+CHIP Xor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Not(in=a,out=nota);
+    Not(in=b,out=notb);
+    And(a=nota,b=b,out=t1);
+    And(a=a,b=notb,out=t2);
+    Or(a=t1,b=t2,out=out);
+}
